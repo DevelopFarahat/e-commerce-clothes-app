@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/css/Form.css">
+    <title>Login</title>
+         
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login" >
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login Now"  class="login-to-sign">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Sigup now</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" autocomplete="off"  id="name"  required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email"  autocomplete="off" id="email"  required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" autocomplete="off" id="password"  required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" autocomplete="off" id="confirmPassword"  required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div><br>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck" id="notification">
+                            <label for="sigCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Sign Up" id="inputLocalStorage" class="submit-btn" >
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text login-link" >Sigin now</a>
+                    </span>
+                </div>
+
+                <div class="alert-box">
+                    <img src="/images/error.png" class="alert-img" alt="">
+                    <p class="alert-msg">Error message</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/Form.js"></script>
+
+</body>
+</html>

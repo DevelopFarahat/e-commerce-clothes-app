@@ -1,0 +1,17 @@
+.card{
+    width:calc(85%/5) !important;
+}
+.card > img {
+    width: 66% !important;
+    height: 66% !important;
+}
+.favorite-product-container{
+    height:7.5%;
+    width:11%;
+}
+.empty-favorite-img{
+    width:28%;
+    height:20%;
+    display: block;
+    margin:0 auto;
+}
