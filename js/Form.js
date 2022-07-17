@@ -94,7 +94,7 @@ const container = document.querySelector(".container"),
             loginBtn.addEventListener('click', () => {
                 if(localStorage.getItem('username') !== null && localStorage.getItem('password') !== null){
                     if(loginUsername.value == localStorage.getItem('username') &&  loginPassword.value == localStorage.getItem('password')){
-                        window.location.href = "../index.html";
+                        window.location.href = "index.html";
                     }
                 }
             });

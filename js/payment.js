@@ -98,7 +98,7 @@ paymentBtn.addEventListener('click', function () {
     }
 
     if(usernamePattern.test(fullname.value) && emailPattern.test(email.value) && cardNumberPattern.test(cardNumber.value) && cardCvcPattern.test(cardCvv.value) && cardNamePattern.test(cardName.value) ){
-        window.location.href = "/html/clientThanks.html";
+        window.location.href = "html/clientThanks.html";
     }
 
 

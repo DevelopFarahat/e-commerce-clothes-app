@@ -788,5 +788,5 @@ userStatusSection.onclick = function(){
     loginContainer.classList.toggle("hide");
 } 
 loginBtn.onclick = function(){
-    window.location.href = "/html/form.html";
+    window.location.href = "html/form.html";
 }

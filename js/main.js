@@ -136,7 +136,7 @@ languageBox.addEventListener('change',function(event){
 });
 
 shopSneakersBtn.addEventListener('click',function(){
-    window.location.href = "../html/sneakers.html";
+    window.location.href = "/html/sneakers.html";
     console.log("clicked");
 });
 
