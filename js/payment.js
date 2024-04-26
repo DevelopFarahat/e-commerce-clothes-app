@@ -96,9 +96,16 @@ paymentBtn.addEventListener('click', function () {
             cardNameError.style.display = "none";
         }
     }
-
+        console.log("payment")
+        console.log(usernamePattern.test(fullname.value) && emailPattern.test(email.value) && cardNumberPattern.test(cardNumber.value) && cardCvcPattern.test(cardCvv.value) && cardNamePattern.test(cardName.value) )
+        console.log(usernamePattern.test(fullname.value) )
+        console.log(emailPattern.test(email.value))
+        console.log( cardNumberPattern.test(cardNumber.value))
+        console.log( cardCvcPattern.test(cardCvv.value))
+        console.log( cardNamePattern.test(cardName.value))
     if(usernamePattern.test(fullname.value) && emailPattern.test(email.value) && cardNumberPattern.test(cardNumber.value) && cardCvcPattern.test(cardCvv.value) && cardNamePattern.test(cardName.value) ){
-        window.location.href = "html/clientThanks.html";
+        
+        window.location.href = window.location.protocol + '//' + window.location.host+"/html/clientThanks.html";
     }
 
 

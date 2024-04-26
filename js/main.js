@@ -136,8 +136,7 @@ languageBox.addEventListener('change',function(event){
 });
 
 shopSneakersBtn.addEventListener('click',function(){
-    window.location.href = "/html/sneakers.html";
-    console.log("clicked");
+    window.location.href = window.location.protocol + '//' + window.location.host+"/html/sneakers.html";
 });
 
 let userStatusSection = document.querySelector(".header_login_signup_container");
@@ -146,7 +145,7 @@ userStatusSection.onclick = function(){
     loginContainer.classList.toggle("hide");
 }
 loginBtn.onclick = function(){
-    window.location.href = "/html/form.html";
+    window.location.href = window.location.protocol + '//' + window.location.host+"/html/form.html";
 }
 
 let cartShop = document.querySelector('.cart');
@@ -190,7 +189,7 @@ function createShoppingCart(){
     }
     checkoutBtn.addEventListener('click',function(){
         if(localStorage.getItem("userNumberOfOrder") !== 0 && localStorage.getItem("username") != null && localStorage.getItem("password")  != null){
-            location.href = "/html/payment.html";
+            window.location.href = window.location.protocol + '//' + window.location.host+"/html/payment.html";
 
         }else{
             let loginAlert = document.createElement("div");

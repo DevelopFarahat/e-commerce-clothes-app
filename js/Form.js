@@ -56,7 +56,10 @@ const container = document.querySelector(".container"),
                 showAlert('please Chek your Password');  
             }else{
                 // successf ="good"
-                console.log("OK");
+                const user = username.value;
+                const pass = loginpassword.value;
+                    localStorage.setItem('username', user);
+                    localStorage.setItem('password', pass);
 				container.classList.remove("active");
             }
         });
@@ -69,7 +72,7 @@ const container = document.querySelector(".container"),
                 alertBox.classList.add('show');
                 setTimeout(() => {
                     alertBox.classList.remove('show');
-                }, 3000);
+                }, 1000);
             }
 
               //local storage
@@ -78,23 +81,14 @@ const container = document.querySelector(".container"),
             const inputLocalStorage = document.getElementById("inputLocalStorage");
 
 
-            inputLocalStorage.onclick = function(){
-
-                const user = username.value;
-                const pass = loginpassword.value;
-
-                if(user && pass){
-                    localStorage.setItem('username', user);
-                    localStorage.setItem('password', pass);
-
-                }
-            };
+          
             let loginUsername   =    document.querySelector("[placeholder='Enter Your Name']");
             let loginPassword   =     document.querySelector("[placeholder='Enter your password']");
             loginBtn.addEventListener('click', () => {
                 if(localStorage.getItem('username') !== null && localStorage.getItem('password') !== null){
+                    
                     if(loginUsername.value == localStorage.getItem('username') &&  loginPassword.value == localStorage.getItem('password')){
-                        window.location.href = "index.html";
+                        window.location.href = window.location.protocol + '//' + window.location.host+"/index.html";
                     }
                 }
             });
