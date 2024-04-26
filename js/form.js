@@ -27,10 +27,12 @@ const container = document.querySelector(".container"),
     })
 
     // js code to appear signup and login form
-    signUp.addEventListener("click", ( )=>{
+    signUp.addEventListener("click", (e )=>{
+        e.preventDefault();
         container.classList.add("active");
     });
     login.addEventListener("click", ( )=>{
+        e.preventDefault();
         container.classList.remove("active");
     });
 
