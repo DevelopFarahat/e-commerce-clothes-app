@@ -31,7 +31,7 @@ const container = document.querySelector(".container"),
         e.preventDefault();
         container.classList.add("active");
     });
-    login.addEventListener("click", ( )=>{
+    login.addEventListener("click", (e )=>{
         e.preventDefault();
         container.classList.remove("active");
     });
